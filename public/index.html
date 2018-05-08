@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html ng-app="myApp"> 
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
+	<title> REISEBLOG APP </title>
+</head>
+<body>
+	<div class="container" ng-controller="AppCtrl">
+<h1>ReiseblogSOA App </h1>
+<table class="table">
+<thread>
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Number</th>
+	</tr>
+	</thread>
+	<tbody>
+		<tr = ng-repeat="contact in contactlist">
+			<td>{{contact.name}}</td>
+			<td>{{contact.email}}</td>
+			<td>{{contact.number}}</td>
+	</tbody>
+</table>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<script src="controllers/controller.js"></script>
+</body>
+</html>
