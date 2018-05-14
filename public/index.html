@@ -19,10 +19,25 @@
 		<th>Name</th>
 		<th>Email</th>
 		<th>Number</th>
+		<th> Action </th>
 	</tr>
 	</thread>
 	<tbody>
-		<tr = ng-repeat="contact in contactlist">
+
+		<tr>
+			<td>
+				<input class="form-control" ng-model ="contact.name">
+			</td>
+			<td>
+				<input class="form-control" ng-model ="contact.email">
+			</td>
+			<td>
+				<input class="form-control" ng-model ="contact.number">
+			</td>
+			<td> <Button class = "btn btn-primary" ng-click ="addContact()"> Add Contact </Button>
+			 </td>
+		</tr>
+		<tr  ng-repeat="contact in reiseblog">
 			<td>{{contact.name}}</td>
 			<td>{{contact.email}}</td>
 			<td>{{contact.number}}</td>
